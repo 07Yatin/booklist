@@ -1143,10 +1143,4 @@ function BookOwnerDashboard({ toggleTheme, mode }) {
   );
 }
 
-export default function BookOwnerDashboardWithSnackbar(props) {
-  return (
-    <SnackbarProvider maxSnack={3} autoHideDuration={2500} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
-      <BookOwnerDashboard {...props} />
-    </SnackbarProvider>
-  );
-} 
+export default BookOwnerDashboard; 

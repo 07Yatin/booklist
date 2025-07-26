@@ -549,10 +549,4 @@ function BookUserDashboard({ toggleTheme, mode }) {
   );
 }
 
-export default function BookUserDashboardWithSnackbar(props) {
-  return (
-    <SnackbarProvider maxSnack={3} autoHideDuration={2500} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
-      <BookUserDashboard {...props} />
-    </SnackbarProvider>
-  );
-} 
+export default BookUserDashboard; 
