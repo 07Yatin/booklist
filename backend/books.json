@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1703123456789,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "returnDateTime": "2024-12-25T14:30:00.000Z",
+    "favorites": [
+      "user1",
+      "user2"
+    ],
+    "createdAt": "2024-12-20T10:00:00.000Z",
+    "updatedAt": "2024-12-20T10:00:00.000Z"
+  },
+  {
+    "id": 1703123456790,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "returnDateTime": "2024-12-28T16:00:00.000Z",
+    "favorites": [
+      "user3"
+    ],
+    "createdAt": "2024-12-20T10:05:00.000Z",
+    "updatedAt": "2024-12-20T10:05:00.000Z"
+  },
+  {
+    "id": 1703123456792,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "returnDateTime": "2024-12-22T12:00:00.000Z",
+    "favorites": [
+      "user2",
+      "user6"
+    ],
+    "createdAt": "2024-12-20T10:15:00.000Z",
+    "updatedAt": "2024-12-20T10:15:00.000Z"
+  },
+  {
+    "id": 1703123456793,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "returnDateTime": "2024-12-30T18:30:00.000Z",
+    "favorites": [
+      "user1",
+      "user3",
+      "user7",
+      "ownerUser831"
+    ],
+    "createdAt": "2024-12-20T10:20:00.000Z",
+    "updatedAt": "2024-12-20T10:20:00.000Z"
+  },
+  {
+    "id": 1703123456794,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "returnDateTime": null,
+    "favorites": [
+      "user4"
+    ],
+    "createdAt": "2024-12-20T10:25:00.000Z",
+    "updatedAt": "2024-12-20T10:25:00.000Z"
+  },
+  {
+    "id": 1703123456795,
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "returnDateTime": "2025-01-10T21:15",
+    "favorites": [
+      "user5",
+      "user6"
+    ],
+    "createdAt": "2024-12-20T10:30:00.000Z",
+    "updatedAt": "2024-12-20T10:30:00.000Z"
+  },
+  {
+    "id": 1703123456796,
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "returnDateTime": null,
+    "favorites": [
+      "user2",
+      "user7"
+    ],
+    "createdAt": "2024-12-20T10:35:00.000Z",
+    "updatedAt": "2024-12-20T10:35:00.000Z"
+  },
+  {
+    "id": 1753555501466,
+    "title": "bfxb",
+    "author": "fbxb",
+    "returnDateTime": "2025-08-08T00:20",
+    "favorites": []
+  },
+  {
+    "id": 1753555998300,
+    "title": "vsfv",
+    "author": "vsfv",
+    "returnDateTime": "2025-08-08T05:23",
+    "favorites": []
+  },
+  {
+    "id": 1753556346136,
+    "title": "fbddb",
+    "author": "bfdb",
+    "returnDateTime": "2025-08-09T05:29",
+    "favorites": []
+  }
+]
