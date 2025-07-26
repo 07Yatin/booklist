@@ -1,0 +1,28 @@
+services:
+  # Backend Service
+  - type: web
+    name: booklist-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: FRONTEND_URL
+        value: https://booklist-frontend.onrender.com
+
+  # Frontend Service
+  - type: web
+    name: booklist-frontend
+    env: static
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        value: https://booklist-backend.onrender.com
+      - key: REACT_APP_SOCKET_URL
+        value: https://booklist-backend.onrender.com 
