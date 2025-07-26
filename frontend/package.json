@@ -19,11 +19,20 @@
     "socket.io-client": "^4.8.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx --fix",
+    "lint:check": "eslint src --ext .js,.jsx",
+    "type-check": "npm run lint:check && npm run build",
+    "prebuild": "npm run lint:check",
+    "predeploy": "npm run type-check",
+    "pre-commit": "node scripts/pre-commit.js"
   },
   "eslintConfig": {
     "extends": [

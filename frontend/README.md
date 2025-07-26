@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# BookList Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based frontend for the BookList application with real-time updates and advanced UI/UX features.
 
-## Available Scripts
+## 🚀 Quick Start
 
-In the project directory, you can run:
+```bash
+# Install dependencies
+npm install
 
-### `npm start`
+# Start development server
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Run linting
+npm run lint
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Build for production
+npm run build
+```
 
-### `npm test`
+## 📁 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── components/          # Reusable UI components
+├── utils/              # Utility functions and services
+│   ├── apiService.js   # Centralized API calls
+│   ├── errorHandler.js # Error handling utilities
+│   └── constants.js    # Application constants
+├── BookUserDashboard.js    # Reader dashboard
+├── BookOwnerDashboard.js   # Owner dashboard
+├── App.js              # Main application component
+└── config.js           # Environment configuration
+```
 
-### `npm run build`
+## 🛠 Development Guidelines
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Code Quality
+- ✅ **Always run linting before commits**: `npm run lint:check`
+- ✅ **Use centralized error handling**: Import from `utils/errorHandler.js`
+- ✅ **Use API service**: Import from `utils/apiService.js`
+- ✅ **Use constants**: Import from `utils/constants.js`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Error Prevention Checklist
+- [ ] No unused imports or variables
+- [ ] All API calls use centralized error handling
+- [ ] All magic numbers/strings replaced with constants
+- [ ] Proper error boundaries in place
+- [ ] Console statements removed for production
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pre-commit Hooks
+The following scripts run automatically:
+- `prebuild`: Runs linting before build
+- `predeploy`: Runs type checking before deployment
 
-### `npm run eject`
+## 🔧 Available Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `npm start` - Start development server
+- `npm build` - Build for production (includes linting)
+- `npm test` - Run tests
+- `npm run lint` - Fix linting issues automatically
+- `npm run lint:check` - Check for linting issues
+- `npm run type-check` - Run linting and build check
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚨 Common Issues & Solutions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Build Failures
+1. **ESLint errors**: Run `npm run lint` to auto-fix
+2. **Undefined variables**: Check imports and variable declarations
+3. **Unused imports**: Remove or use imported items
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Deployment Issues
+1. **Environment variables**: Ensure all required env vars are set
+2. **Build directory**: Verify `build/` directory is created
+3. **API endpoints**: Check `config.js` for correct URLs
 
-## Learn More
+## 📦 Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Core
+- React 18
+- Material-UI (MUI)
+- Socket.io Client
+- Framer Motion
+- Notistack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Development
+- ESLint
+- ESLint Plugin Unused Imports
 
-### Code Splitting
+## 🔒 Security
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Environment variables for sensitive data
+- Input validation on all forms
+- XSS protection through React
+- CORS configuration in backend
 
-### Analyzing the Bundle Size
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Environment Variables
+Create `.env` files based on templates:
+- `env.development` - Development settings
+- `env.production` - Production settings
 
-### Making a Progressive Web App
+### Build Process
+1. Install dependencies: `npm install`
+2. Set environment variables
+3. Run build: `npm run build`
+4. Deploy `build/` directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 Contributing
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Follow the development guidelines
+2. Run linting before committing
+3. Test thoroughly before deployment
+4. Update documentation as needed

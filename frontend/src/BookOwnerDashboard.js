@@ -52,7 +52,6 @@ function BookOwnerDashboard({ toggleTheme, mode }) {
       })
       .then(setBooks)
       .catch(err => {
-        setError(err.message);
         enqueueSnackbar(err.message, { variant: 'error' });
       })
       .finally(() => setLoading(false));
@@ -124,7 +123,6 @@ function BookOwnerDashboard({ toggleTheme, mode }) {
         setDialogOpen(false);
       })
       .catch(err => {
-        setError(err.message);
         enqueueSnackbar(err.message, { variant: 'error' });
       })
       .finally(() => setActionLoading(false));
@@ -160,7 +158,6 @@ function BookOwnerDashboard({ toggleTheme, mode }) {
         setEditDialogOpen(false);
       })
       .catch(err => {
-        setError(err.message);
         enqueueSnackbar(err.message, { variant: 'error' });
       })
       .finally(() => setActionLoading(false));
@@ -232,7 +229,6 @@ function BookOwnerDashboard({ toggleTheme, mode }) {
         setBookToDelete(null);
       })
       .catch(err => {
-        setError(err.message);
         enqueueSnackbar(err.message, { variant: 'error' });
       })
       .finally(() => setActionLoading(false));

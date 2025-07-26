@@ -45,7 +45,6 @@ function BookUserDashboard({ toggleTheme, mode }) {
       })
       .then(setBooks)
       .catch(err => {
-        setError(err.message);
         enqueueSnackbar(err.message, { variant: 'error' });
       })
       .finally(() => setLoading(false));
