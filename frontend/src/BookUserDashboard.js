@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Box, Container, Grid, Card, CardContent, CardActions, Typography, 
-  AppBar, Toolbar, TextField, Button, IconButton, Dialog, DialogTitle, 
-  DialogContent, DialogActions, Pagination, CircularProgress, Chip
+import {
+  Box, Container, Grid, Card, CardContent, CardActions, Typography,
+  AppBar, Toolbar, TextField, Button, IconButton, Dialog, DialogTitle,
+  DialogContent, DialogActions, Pagination, CircularProgress
 } from '@mui/material';
 import { Favorite as FavoriteIcon, Brightness4 as DarkIcon, Brightness7 as LightIcon } from '@mui/icons-material';
 import { motion } from 'framer-motion';
@@ -32,7 +32,7 @@ function BookUserDashboard({ toggleTheme, mode }) {
   const [detailsDialogOpen, setDetailsDialogOpen] = useState(false);
   const [bookDetails, setBookDetails] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+
   const [favorites, setFavorites] = useState({});
   const { enqueueSnackbar } = useSnackbar();
 
