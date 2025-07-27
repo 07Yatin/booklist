@@ -203,7 +203,7 @@ function BookOwnerDashboard({ toggleTheme, mode }) {
         returnDate = date.toISOString().split('T')[0];
         returnTime = date.toTimeString().split(' ')[0].substring(0, 5);
       } catch (error) {
-        console.error('Error parsing return date:', error);
+        // Error parsing return date - continue with empty values
       }
     }
 
