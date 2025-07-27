@@ -11,7 +11,8 @@ const server = http.createServer(app);
 // CORS configuration for both development and production
 const allowedOrigins = [
   'http://localhost:3000',  // Development
-  'https://your-frontend-url.onrender.com',  // Production - update this
+  'https://booklist-fro.onrender.com',  // Production - your actual frontend URL
+  'https://booklist-backend-qpj6.onrender.com',  // Your backend URL
   process.env.FRONTEND_URL  // Environment variable
 ].filter(Boolean); // Remove undefined values
 
